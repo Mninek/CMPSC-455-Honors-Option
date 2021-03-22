@@ -3,7 +3,7 @@
 
 //MOST CODE BELOW IS COPIED FROM TEXTBOOK CHAPTER 7 
 //I WAS TOLD TO DO THIS
-void*malloc_or_exit(size_t nbytes,const char*file,intline)
+void*malloc_or_exit(size_t nbytes,const char*file,int line)
 {
     void *x;
     //fail if we try to allocate 0 bytes.
@@ -16,6 +16,6 @@ void*malloc_or_exit(size_t nbytes,const char*file,intline)
         fprintf(stderr, "%s:line %d: malloc() of %zu bytes failed\n",
                 file, line, nbytes);
         exit(EXIT_FAILURE);
-    } else
+    } else 
         return x;
 }
