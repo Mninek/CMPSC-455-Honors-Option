@@ -25,7 +25,7 @@ static void read_pgm_pixel_data(struct image *img)
 }
 
 static void read_ppm_pixel_data(struct image *img){
-    struct pam *pam = &img->ppm;
+    struct pam *pam = &img->pam;
     tuple *row = pnm_allocpamrow(pam);
     make_matrix(img->g, pam->height, pam->width);
     make_matrix(img->r, pam->height, pam->width);
