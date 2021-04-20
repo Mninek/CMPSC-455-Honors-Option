@@ -1,0 +1,6 @@
+World 100 100 # height
+Eden 10 10
+Plant Energy 80
+Reproduction Threshold 300
+# Animals: 
+( 0 0) 0 200 | 5 5 5 5 5 5 5 5 |
